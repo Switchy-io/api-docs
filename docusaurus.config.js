@@ -1,20 +1,20 @@
 module.exports = {
   title: 'Switchy API v1',
   tagline: 'Switchy Developer Guide',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://developers.switchy.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'switchy', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: 'Switchy-io', // Usually your GitHub org/user name.
+  projectName: 'api-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Switchy Developer',
+      title: 'Switchy for developers',
       logo: {
         alt: 'Switchy Logo',
         src: 'img/switchy_io_blue.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
+        {to: 'docs/overview/index', label: 'Docs', position: 'left'},
         /*
         {to: 'blog', label: 'Blog', position: 'left'},
         */
@@ -38,14 +38,15 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: 'overview/index',
+              to: '/docs/overview/index',
             },
             {
               label: 'Guides',
-              to: 'guides/index',
+              to: '/docs/guides/how-to-query',
             },
           ],
         },
+        /*
         {
           title: 'Community',
           items: [
@@ -58,19 +59,22 @@ module.exports = {
               label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
             },
-            */
+            
           ],
         },
+        */
         {
           title: 'Social',
           items: [
+            /*
             {
               label: 'Blog',
               to: 'blog',
             },
+            */
             {
               label: 'Facebook',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://www.facebook.com/groups/2357989371103633/?source_id=265902427493952',
             },
             /*
             {
@@ -91,7 +95,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/Switchy-io/api-docs/edit/master/website/',
+            'https://github.com/Switchy-io/api-docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
