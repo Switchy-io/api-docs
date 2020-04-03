@@ -45,9 +45,9 @@ For other information, such as authentication and rate limit details, check out 
 
 ## Requesting support
 
-For questions, bug reports, and discussions about Switchy Apps, and API development, reach us at [Switchy Support](mailto:contact@switchy.io).
+For questions, bug reports, and discussions about Switchy Apps, and API development, feel free to reach us on our live chat. You can find our chat on the website or within the app! 😊
 
-Consider reaching out to [Switchy Support](mailto:contact@switchy.io) directly using the contact form for:
+Consider reaching out directly using the live chat for:
 - guaranteed response from Switchy staff
 - support requests involving sensitive data - or private concerns
 - feature requests
