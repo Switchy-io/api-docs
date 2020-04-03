@@ -19,8 +19,8 @@ module.exports = {
         {to: 'blog', label: 'Blog', position: 'left'},
         */
         {
-          href: 'https://jobs.stationf.co/companies/sently/jobs/software-engineer_paris',
-          label: 'We are hiring!',
+          href: 'https://switchy.io',
+          label: 'Back to Switchy',
           position: 'right',
         },
         {

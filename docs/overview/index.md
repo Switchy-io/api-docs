@@ -1,6 +1,6 @@
 ---
 title: Overview
-sidebar_label: Overview
+sidebar_label: Introduction
 ---
 
 We have a GraphQL API for queries and some API Rest endpoints for few mutations.

@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4172d3a7-3388-461f-b68f-c806d45e98a8/deploy-status)](https://app.netlify.com/sites/flamboyant-northcutt-7e74c3/deploys)
+
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.

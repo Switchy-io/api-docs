@@ -12,7 +12,7 @@ Each token is dedicated by workspace, so with one token, you can only access to 
 
 You just have to follow this steps:
 
-1. Login to [Switchy.io](https://hi.switchy.io/)
+1. Login to [Switchy.io](https://switchy.io/)
 1. Go to the workspace that you want to use with the API
 1. Go into the settings page then select the **integrations** tab
 1. Click over the button **Generate a token**
@@ -23,11 +23,11 @@ You just have to provide for each request an **Api-Authorization**.
 
 For example with curl
 
-```javascript
-curl -H "Api-Authorization: bearer yourtoken" -X POST -d " \
+```bash
+curl -H "Api-Authorization: your-token" -X POST -d " \
  { \
-   \"query\": \"query { viewer { login }}\" \
+   \"query\": \"query {  workspaces {     companyName     createdDate     id     name   }}\" \
  } \
-" https://graphql.switchy.io/v1/graphql
+" https://graphql.switchy.io/v1
 ```
 

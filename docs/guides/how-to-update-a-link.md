@@ -62,23 +62,12 @@ The mutation to update the slug of an existing link can be like this:
 mutation updateSlug($domain: String!, $slug: String, $newSlug: String!) {
   update_links(where: {domain: {_eq: $domain}, id: {_eq: $slug}}, _set: {id: $newSlug}) {
     returning {
-      createdDate
-      description
       domain
-      extraOptionsGeolocations
-      extraOptionsLinkRotator
       favicon
       folderId
       id
       image
-      pixels
-      removed
-      showGDPR
-      tags
-      title
-      uniq
       url
-      userUid
       workspaceId
     }
   }

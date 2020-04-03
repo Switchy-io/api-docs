@@ -3,18 +3,18 @@ title: Communicating with GraphQL
 sidebar_label: Root endpoint
 ---
 
-Because GraphQL operations consist of multiline JSON, Switchy recommends using the Explorer to make GraphQL calls. You can also use cURL or any other HTTP-speaking library.
+Because GraphQL operations consist of multiline JSON, Switchy recommends using a graphQL Softwair Client like [Altair](https://altair.sirmuel.design/) to make GraphQL calls. You can also use cURL or any other HTTP-speaking library.
 
 In REST, HTTP verbs determine the operation performed. In GraphQL, you'll provide a JSON-encoded body whether you're performing a query or a mutation, so the HTTP verb is POST. The exception is an introspection query, which is a simple GET to the endpoint.
 
 To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:
 
-```javascript
-curl -H "Api-Authorization: bearer yourtoken" -X POST -d " \
+```bash
+curl -H "Api-Authorization: your-token" -X POST -d " \
  { \
-   \"query\": \"query { viewer { login }}\" \
+   \"query\": \"query {  workspaces {     companyName     createdDate     id     name   }}\" \
  } \
-" https://graphql.switchy.io/v1/graphql
+" https://graphql.switchy.io/v1
 ```
 
 

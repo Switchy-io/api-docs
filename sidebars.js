@@ -19,6 +19,8 @@ module.exports = {
       'guides/how-to-create-a-link', 
       'guides/how-to-update-a-link',
     ],
-    Changelog: ['changelog/index'],
+    Cautions: [
+      'changelog/index'
+    ],
   },
 };

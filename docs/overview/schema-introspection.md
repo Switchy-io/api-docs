@@ -42,7 +42,7 @@ query {
 - You can also run an introspection query of the schema via a GET request:
 
 ```
-curl -H "Authorization: bearer token" https://graphql.switchy.io/v1/graphql
+curl -H "Api-Authorization: your-token" https://graphql.switchy.io/v1
 ```
 
 The results are in JSON, so we recommend pretty-printing them for easier reading and searching.
