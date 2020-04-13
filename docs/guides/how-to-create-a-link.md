@@ -39,9 +39,37 @@ POST https://api.switchy.io/v1/links/create
 | extraOptionsGeolocations | | jsonb | [] |
 | extraOptionsLinkRotator | | jsonb | [] |
 | folderId | | Int | null |
-| pixels | Used for pixelling your short link and retargeting purpose | jsonb | [] |
+| pixels | Used for pixelling your short link and retargeting purpose | Pixel[] | [] |
 | showGDPR | Display the GDPR popup if pixels are presents | Boolean | false |
 | tags | Used for searching and sorting in the dahsboard | String[] | [] |
 | -------- | --------- | --------- | --------- |
 | createdDate |  | timestamptz | now() |
 | removed | | timestamptz | null | 
+
+
+### Pixel type 
+
+| Parameter | Description      |  Type | Default value |
+| -------- | --------- | --------- | --------- |
+| platform | **Mandatory** Which platform belongs the pixel | Platform |  |
+| value | **Mandatory** Value of the pixel | String |  |
+| id | It's the id of your pixel in the database | UUID | randomId() |
+| workspaceId |  | integer |  |
+
+
+### Platform type
+
+```
+type Platform =
+  | 'linkedin'
+  | 'facebook'
+  | 'gtm'
+  | 'quora'
+  | 'pinterest'
+  | 'twitter'
+  | 'ga'
+  | 'bing'
+  | 'nexus'
+  | 'adroll'
+  | 'adwords';
+```
