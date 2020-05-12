@@ -8,6 +8,15 @@ title: How to create a link?
 Actually, we don't expose our GraphQL endpoint for creating link. We are working hard to allow it. In the meantime, you can use this endpoint to do it.
 
 
+<div style={{border: '2px solid red', borderRadius: '4px', padding: '16px', marginBottom: '16px'}}>
+  <b>Domain hi.switchy.io and swiy.io are only availables trought API for officials integrations.</b>
+
+  <p>
+  If you want to make an official integration, feel free to reach us on our live chat. You can find our chat on the website or within the app! 😊
+  </p>
+</div>
+
+
 **HTTP Request**
 POST https://api.switchy.io/v1/links/create
 
@@ -28,7 +37,7 @@ POST https://api.switchy.io/v1/links/create
 | Parameter | Description      |  Type | Default value |
 | -------- | --------- | --------- | --------- |
 | url | **Mandatory** Url to redirect | String | |
-| domain | Domain name of the link | String | hi.switchy.io |
+| domain | **Mandatory** Domain name of the link | String | hi.switchy.io |
 | id | Alias slug, it's the id of your link (domainName/id)| String | randomId() |
 | -------- | --------- | --------- | --------- |
 | title | Used for the open graph title | String | null (can be autofill with the autofill parameter) |

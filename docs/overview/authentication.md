@@ -31,3 +31,13 @@ curl -H "Api-Authorization: your-token" -X POST -d " \
 " https://graphql.switchy.io/v1
 ```
 
+
+### Official partner/integration
+
+For official integration, you have more access to our API.
+
+For each request, you have to provide **Partner-Authorization** and the **Api-Authorization** (of you user) headers.
+
+If you don't have a **Partner-Authorization**, feel free to reach us on our live chat. You can find our chat on the website or within the app! 😊
+
+
