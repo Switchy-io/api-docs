@@ -27,7 +27,7 @@ POST https://api.switchy.io/v1/links/create
 | Parameter | Description      |  Type | Default value |
 | -------- | --------- | --------- | --------- |
 | link        | Link to create for the redirection | Link     | no default value   |
-| autofill  | Server will add automatically open graph metadata, no custom metadata  | boolean | false |
+| autofill  | Server will add automatically open graph metadata  | boolean | true |
 
 
 
