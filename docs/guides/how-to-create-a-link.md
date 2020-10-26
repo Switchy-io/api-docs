@@ -30,7 +30,6 @@ curl 'https://api.switchy.io/v1/links/create' \
   --compressed
 ```
 
-
 ### JSON Parameters
 
 | Parameter | Description      |  Type | Default value |
