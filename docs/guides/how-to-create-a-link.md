@@ -20,6 +20,14 @@ Actually, we don't expose our GraphQL endpoint for creating link. We are working
 **HTTP Request**
 POST https://api.switchy.io/v1/links/create
 
+**Curl Example**
+```
+curl 'https://api.switchy.io/v1/links/create' \
+  -H 'Content-Type: application/json' \
+  -H 'Api-Authorization': YOUR_TOKEN_HERE
+  --data-binary '{"link":{"title":"","description":"","url":"https://example.com/","pixels":[],"showGDPR":false,"extraOptionsLinkRotator":[],"extraOptionsGeolocations":[],"tags":[]}}' \
+  --compressed
+```
 
 
 ### JSON Parameters
