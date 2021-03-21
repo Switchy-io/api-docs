@@ -25,7 +25,7 @@ POST https://api.switchy.io/v1/links/create
 ```
 curl 'https://api.switchy.io/v1/links/create' \
   -H 'Content-Type: application/json' \
-  -H 'Api-Authorization': YOUR_TOKEN_HERE
+  -H 'Api-Authorization: YOUR_TOKEN_HERE'
   --data-binary '{"link":{"title":"","description":"","url":"https://example.com/","pixels":[],"showGDPR":false,"extraOptionsLinkRotator":[],"extraOptionsGeolocations":[],"tags":[]}}' \
   --compressed
 ```
