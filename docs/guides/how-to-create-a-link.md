@@ -1,3 +1,4 @@
+
 ---
 id: how-to-create-a-link
 title: How to create a link?
@@ -59,9 +60,18 @@ curl 'https://api.switchy.io/v1/links/create' \
 | pixels | Used for pixelling your short link and retargeting purpose | Pixel[] | [] |
 | showGDPR | Display the GDPR popup if pixels are presents | Boolean | false |
 | tags | Used for searching and sorting in the dahsboard | String[] | [] |
+| note| Some notes visible in admin panel | String | null | 
+| deepLinkingEnable| Enable Deeplink if it is possible | Boolean| false| 
+| linkScripts| List of script wihch will be added to a link if linkScriptEnable is true | Int[]| null | 
+| linkScriptEnable| Enable linkScripts connected to a link | Boolean| false| 
+| masking| Enable link masking | Boolean| false|
+| caseSensitive| Is link slug is case sensitive | Boolean| false|
+| linkExpiration| Set up date then link will be expiried and redirect endpoint | String | null | 
+| passwordProtect| Show password protection popup | String | null | 
 | -------- | --------- | --------- | --------- |
 | createdDate |  | timestamptz | now() |
 | removed | | timestamptz | null | 
+
 
 
 ### Pixel type 
