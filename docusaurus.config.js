@@ -13,7 +13,7 @@ module.exports = {
         alt: 'Switchy Logo',
         src: 'img/switchy_io_blue.svg',
       },
-      links: [
+      items: [
         {to: 'docs/overview/index', label: 'Docs', position: 'left'},
         /*
         {to: 'blog', label: 'Blog', position: 'left'},
@@ -59,7 +59,7 @@ module.exports = {
               label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
             },
-            
+
           ],
         },
         */
