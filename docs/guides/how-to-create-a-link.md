@@ -1,4 +1,5 @@
 
+
 ---
 id: how-to-create-a-link
 title: How to create a link?
@@ -66,8 +67,8 @@ curl 'https://api.switchy.io/v1/links/create' \
 | linkScriptEnable| Enable linkScripts connected to a link | Boolean| false| 
 | masking| Enable link masking | Boolean| false|
 | caseSensitive| Is link slug is case sensitive | Boolean| false|
-| linkExpiration| Set up date then link will be expiried and redirect endpoint | String | null | 
-| passwordProtect| Show password protection popup | String | null | 
+| linkExpiration| Set up date then link will be expiried and redirect endpoint | LinkExpiration | null | 
+| passwordProtect| Show password protection popup | PasswordProtect| null | 
 | -------- | --------- | --------- | --------- |
 | createdDate |  | timestamptz | now() |
 | removed | | timestamptz | null | 
@@ -84,7 +85,21 @@ curl 'https://api.switchy.io/v1/links/create' \
 | workspaceId |  | integer |  |
 
 
-### Platform type
+### LinkExpiration type 
+
+| Parameter | Description      |  Type | Default value |
+| -------- | --------- | --------- | --------- |
+| enable| **Mandatory** Is link expiration enabled | Boolean |  |
+| end | **Mandatory** link exparation end date - exaxmple: 2021-11-11T06:59:01.499Z | String |  |
+| url | **Mandatory** Url the link will be redirected then link become expired | UUID | randomId() |
+| timezone | **Mandatory** timezone  | Int |  |
+
+### PasswordProtect type
+
+| Parameter | Description      |  Type | Default value |
+| -------- | --------- | --------- | --------- |
+| enable | **Mandatory** Is password protection enabled | Boolean |  |
+| password| **Mandatory** Password of protected link | String |  |
 
 ```
 type Platform =
