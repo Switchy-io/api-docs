@@ -66,7 +66,6 @@ curl 'https://api.switchy.io/v1/links/create' \
 | linkScripts| List of script wihch will be added to a link if linkScriptEnable is true | Int[]| null | 
 | linkScriptEnable| Enable linkScripts connected to a link | Boolean| false| 
 | masking| Enable link masking | Boolean| false|
-| caseSensitive| Is link slug is case sensitive | Boolean| false|
 | linkExpiration| Set up date then link will be expiried and redirect endpoint | LinkExpiration | null | 
 | passwordProtect| Show password protection popup | PasswordProtect| null | 
 | -------- | --------- | --------- | --------- |
