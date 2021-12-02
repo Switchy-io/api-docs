@@ -1,10 +1,3 @@
-
-
----
-id: how-to-create-a-link
-title: How to create a link?
----
-
 ## Guide to create a link with our API
 
 Actually, we don't expose our GraphQL endpoint for creating link. We are working hard to allow it. In the meantime, you can use this endpoint to do it.
@@ -23,12 +16,77 @@ Actually, we don't expose our GraphQL endpoint for creating link. We are working
 POST https://api.switchy.io/v1/links/create
 
 
-**Curl Example**
+**Minimal curl example**
 ```
-curl 'https://api.switchy.io/v1/links/create' \
-  -H 'Content-Type: application/json' \
-  -H 'Api-Authorization: YOUR_TOKEN_HERE'
-  --data-binary '{"link":{"title":"","description":"","url":"https://example.com/","pixels":[],"showGDPR":false,"extraOptionsLinkRotator":[],"extraOptionsGeolocations":[],"tags":[]}}' \
+curl 'https://api.switchy.io/v1/links/create' \  
+  -H 'Content-Type: application/json' \  
+  -H 'Api-Authorization: YOUR_TOKEN_HERE'  
+  -d \  
+  {  
+    "link": {  
+      "title": "",  
+      "description": "",  
+      "url": "https://example.com/",  
+      "pixels": [],  
+      "showGDPR": false,  
+      "extraOptionsLinkRotator": [],  
+      "extraOptionsGeolocations": [],  
+      "tags": []  
+    }  
+  }  
+  --compressed
+```
+**More complex curl example**
+```
+curl 'https://api.switchy.io/v1/links/create' \  
+  -H 'Content-Type: application/json' \  
+  -H 'Api-Authorization: YOUR_TOKEN_HERE'  
+  -d \  
+  {  
+    "link": {  
+      "title": "My title",  
+      "description": "My description",  
+      "url": "https://example.com/",  
+      "image": "https://example.com/my.jpg",  
+      "pixels": [  
+        {  
+          "createdAt": "2021-01-30T08:03:34.568+00:00",  
+          "id": "pixel id",  
+          "platform": "twitter",  
+          "title": "pixel title",  
+          "value": "tixel value",  
+          "workspaceId": 5972  
+        }  
+      ],  
+      "showGDPR": true,  
+      "extraOptionsGeolocations": [  
+        {  
+          "url": "https://github.com",  
+          "value": "AO"  
+        }  
+      ],  
+      "tags": [  
+        "mytag"  
+      ],  
+      "domain": "hi.swutchy.io",  
+      "id": "my-slug",  
+      "folderId": 10313,  
+      "favicon": "https://example.com/favicon_144x144.png",  
+      "linkExpiration": {  
+        "enable": true,  
+        "timezone": 4,  
+        "url": "http://google.com",  
+        "end": "2021-12-29T10:03:51.421Z"  
+      },  
+      "deepLinkingEnable": true,  
+      "note": "My Notes",  
+      "passwordProtect": {  
+        "enable": true,  
+        "password": "123"  
+      },  
+      "workspaceId": 5972  
+    }  
+  }  
   --compressed
 ```
 
@@ -68,9 +126,6 @@ curl 'https://api.switchy.io/v1/links/create' \
 | masking| Enable link masking | Boolean| false|
 | linkExpiration| Set up date then link will be expiried and redirect endpoint | LinkExpiration | null | 
 | passwordProtect| Show password protection popup | PasswordProtect| null | 
-| -------- | --------- | --------- | --------- |
-| createdDate |  | timestamptz | now() |
-| removed | | timestamptz | null | 
 
 
 
