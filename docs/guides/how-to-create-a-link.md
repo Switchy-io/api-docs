@@ -83,8 +83,7 @@ curl 'https://api.switchy.io/v1/links/create' \
       "passwordProtect": {  
         "enable": true,  
         "password": "123"  
-      },  
-      "workspaceId": 5972  
+      }
     }  
   }  
   --compressed
