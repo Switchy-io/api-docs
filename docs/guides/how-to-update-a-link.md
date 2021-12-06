@@ -171,6 +171,3 @@ type Platform =
   | 'adroll'
   | 'adwords';
 ```
-
-
-![Update the link inside GraphiQL](https://cdn-std.droplr.net/files/acc_762311/7j6XV5)
