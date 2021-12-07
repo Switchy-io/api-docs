@@ -11,7 +11,9 @@ Actually, we don't expose our GraphQL endpoint for update link. We are working h
 
 
 **HTTP Request**
-PUT https://api.switchy.io/v1/links/:LINK_ID
+PUT https://api.switchy.io/v1/links/:uniqId
+or
+PUT https://api.switchy.io/v1/links/:domain/:id
 
 
 **Minimal curl example**
