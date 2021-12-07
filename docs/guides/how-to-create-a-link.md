@@ -168,3 +168,5 @@ type Platform =
   | 'adroll'
   | 'adwords';
 ```
+
+Rate limits: 10.000 links/day; 1.000 links/hour max. For any higher limits needs, please reach us on our chat.
