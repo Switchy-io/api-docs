@@ -1,10 +1,3 @@
----
-id: how-to-update-a-link
-title: How to update a link?
-sidebar_label: How to update a link?
----
-
-
 ## Guide to update a link with our API
 
 Actually, we don't expose our GraphQL endpoint for update link. We are working hard to allow it. In the meantime, you can use this endpoint to do it.
@@ -171,3 +164,4 @@ type Platform =
   | 'adroll'
   | 'adwords';
 ```
+Rate limits: 10.000 links/day; 1.000 links/hour max. For any higher limits needs, please reach us on our chat.
