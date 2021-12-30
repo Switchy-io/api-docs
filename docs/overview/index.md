@@ -43,7 +43,7 @@ The docs in the sidebar are generated from the Switchy GraphQL schema. All calls
 
 For other information, such as authentication and rate limit details, check out the guides.
 
-## Requesting support
+## Requesting support & rules
 
 For questions, bug reports, and discussions about Switchy Apps, and API development, feel free to reach us on our live chat. You can find our chat on the website or within the app! 😊
 
@@ -52,3 +52,13 @@ Consider reaching out directly using the live chat for:
 - support requests involving sensitive data - or private concerns
 - feature requests
 - feedback about Switchy products
+
+---
+
+Want to integrate your platform with Switchy for your customers? Offers to your users to shorten links? Working on an Email tool, Social media positing tool, SMS platform, etc.? Let your customers connect their Switchy account with your tool! We will be super happy to help you to integrate Switchy with your platform. Don't hesitate to reach us on our chat.
+
+Want to integrate Switchy into your SaaS/Platform for your own business needs? Our API is accessible only for personal use on your account. If you want to integrate Switchy in white-label in your SaaS tool for your business needs, you need to reach us on our chat to get details about our API Partner Plans.
+
+Any account trying to overpass this limit without a granted access can get its API access restricted to preserve the security of the whole platform.
+
+---
