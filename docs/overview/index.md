@@ -55,10 +55,10 @@ Consider reaching out directly using the live chat for:
 
 ---
 
-Want to integrate your platform with Switchy for your customers? Offers to your users to shorten links? Working on an Email tool, Social media positing tool, SMS platform, etc.? Let your customers connect their Switchy account with your tool! We will be super happy to help you to integrate Switchy with your platform. Don't hesitate to reach us on our chat.
+**Want to integrate your platform with Switchy for your customers? Offers to your users to shorten links? Working on an Email tool, Social media positing tool, SMS platform, etc.?** Let your customers connect their Switchy account with your tool! We will be super happy to help you to integrate Switchy with your platform. Don't hesitate to reach us on our chat.
 
-Want to integrate Switchy into your SaaS/Platform for your own business needs? Our API is accessible only for personal use on your account. If you want to integrate Switchy in white-label in your SaaS tool for your business needs, you need to reach us on our chat to get details about our API Partner Plans.
+**Want to integrate Switchy into your SaaS/Platform for your own business needs?** Our API is accessible only for personal use on your account. If you want to integrate Switchy in white-label in your SaaS tool for your business needs, you need to reach us on our chat to get details about our API Partner Plans.
 
-Any account trying to overpass this limit without a granted access can get its API access restricted to preserve the security of the whole platform.
+**Any account trying to overpass this limit without a granted access can get its API access restricted to preserve the security of the whole platform.**
 
 ---
