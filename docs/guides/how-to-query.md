@@ -19,7 +19,7 @@ A good way to play with our graphQL API is to try it with [Altair GraphQL Client
 1. Download the software at [https://altair.sirmuel.design/](https://altair.sirmuel.design/)
 
 2. Set the corresponding configuration :
-- Setup the graphQL url (**https://graphql.switchy.io/v1**)
+- Setup the graphQL url (**https://graphql.switchy.io/v1/graphql**)
 - Put the **Api-Authorization** header and put your corresponding **token**.
 - Reload the docs, to have the graphQL schema corresponding to your access.
 
