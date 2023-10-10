@@ -28,7 +28,7 @@ curl -H "Api-Authorization: your-token" -X POST -d " \
  { \
    \"query\": \"query {  workspaces {     companyName     createdDate     id     name   }}\" \
  } \
-" https://graphql.switchy.io/v1
+" https://graphql.switchy.io/v1/graphql
 ```
 
 
